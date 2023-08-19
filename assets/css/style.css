@@ -39,7 +39,7 @@ body {
 }
 
 .break-all {
-    word-break: break-all;
+    word-break: break-word;
 }
 
 a {
@@ -493,4 +493,50 @@ a {
     font-style: italic;
     font-weight: 400;
     line-height: 1.53; /* 153.846% */
+}
+
+/* Features */
+.features {
+    margin-top: 135px;
+    padding: 65px 0;
+}
+
+.features .body {
+    display: flex;
+    height: 438px;
+    justify-content: space-between;
+}
+
+.features .images { 
+    display: flex;
+    gap: 0 30px;
+}
+
+.features .images img {
+    width: 270px;
+    object-fit: cover;
+    height: 405px;
+    border-radius: 16px;
+}
+
+.features .images img:first-child {
+    align-self: flex-end;
+    display: flex;
+}
+
+.features .content {
+    width: 40.2%;
+    align-self: center;
+}
+
+.features .content .desc {
+    margin-top: 16px;
+    line-height: 1.75;
+    font-size: 1.6rem;
+}
+
+.features .content .btn {
+    margin-top: 32px;
+    min-width: 137px;
+    background-color: var(--color-primary);
 }
